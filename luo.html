@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>省会城市人口总数</title>
+</head>
+<style>
+    html,
+    body,
+    #container {
+      width: 99%;
+      height: 99%;
+	  top:0px;
+	  right:0px;
+    }
+	#jiesha{
+		z-index=9999;
+		position:absolute;
+		top:10px;
+		right:10px;
+		background: white;
+		opacity: 0.6;
+		border:1px solid red;
+		border-radius:30px;
+		width: 300px;
+		height: 300px;
+	}
+  </style>
+<body>
+<div id="jiesha">
+<p align="center" id="title">省会城市人口总数柱状分布图</p>
+<div>
+一、数据来源：<br>
+1.数据来自于微信公众号RStata<br>
+2.位置数据利用高德API地理编码工具获取<br>
+二、内容说明：<br>
+<p id="use">&emsp;&emsp;该网页主要展示2018年各省份人口分布情况，采用柱状图的方法展示</p>
+</div>
+<div align="center">
+</div>
+</div>
+<iframe id="container" src="https://maplab.amap.com/share/mapv/57db2f5265acb0304f7c0d361b432089"></iframe>
+
+</body>
+</html>
